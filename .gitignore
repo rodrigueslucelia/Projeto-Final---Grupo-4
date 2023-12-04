@@ -137,6 +137,10 @@ pyvenv.cfg
 #ignorar ativação e desativação
 .bat
 .ps1
+activate
+activate.bat
+activate.ps1
+deactivate.bat
 
 
 # Spyder project settings
