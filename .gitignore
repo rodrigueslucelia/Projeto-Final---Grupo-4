@@ -134,6 +134,15 @@ venv.bak/
 pyenv
 pyvenv.cfg
 
+# Ignorar arquivos pywin
+pywin
+
+# Ignorar o arquivo kernel.json
+kernel.json
+
+
+
+
 #ignorar ativação e desativação
 .bat
 .ps1
