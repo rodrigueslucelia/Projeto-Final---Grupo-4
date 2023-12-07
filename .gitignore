@@ -136,6 +136,7 @@ pyvenv.cfg
 
 # Ignorar arquivos pywin
 pywin
+pywin32
 
 # Ignorar o arquivo kernel.json
 kernel.json
