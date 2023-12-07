@@ -33,4 +33,4 @@ df = df[df['Daily Internet Usage']>=0]
 
 
 #Salvar como dataframe
-df.to_csv("Dataset/advertising_tratado.csv")
+df.to_csv("Dataset/advertising_tratado.csv",index=False)
