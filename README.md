@@ -11,40 +11,14 @@ Em seguida, pudemos construir uma análise exploratória dos dados da nossa base
 
 Buscamos na apresentação final, definir quais os aspectos da discussão fariam sentido para que a área de negócio fosse impactada positivamente com os insights, ao levar perguntas e respostas que obtivemos com as análises e contraposições feitas.
 
-## Documentação das funcionalidades
-
-#### Visualização do DataFrame
-
-```http
-  DataFrame = df
-```
-
-| Parâmetro   | Tipo       | Descrição                           |
-| :---------- | :--------- | :---------------------------------- |
-| `api_key` | `string` | **Obrigatório**. A chave da sua API |
-
-#### Retorna um item
-
-```http
-  GET /api/items/${id}
-```
-
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `id`      | `string` | **Obrigatório**. O ID do item que você quer |
-
-#### add(num1, num2)
-
-Recebe dois números e retorna a sua soma.
-
 ## Documentação de cores
 
 | Cor               | Hexadecimal                                                |
 | ----------------- | ---------------------------------------------------------------- |
-| Cor 1       | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Cor 2    | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Cor 3     | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Cor 4      | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
+| Cor 1       | ![#237a6f](https://via.placeholder.com/10/237a6f?text=+) #237a6f |
+| Cor 2    | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
+| Cor 3     | ![#73c294](https://via.placeholder.com/10/73c294?text=+) #73c294 |
+| Cor 4      | ![#2bc8b4](https://via.placeholder.com/10/2bc8b4?text=+) #2bc8b4 |
 
 
 ## Stack utilizada
@@ -53,41 +27,54 @@ Recebe dois números e retorna a sua soma.
 
 **Bibliotecas:** NumPy, Pandas, SeaBorn, MatPlotLib
 
-**Modelos:** KNN, Árvore de Decisão, Regressão Logística
+**Modelos:** Regressão Logística, Árvore de Decisão e KNN.
+
 
 
 ## Roadmap
 
-- O que fizemos primeiro
+- Nosso DataFrame possui mais de 100 mil linhas
 
-- O que fizemos em segundo
+- Utilizamos um parâmetro que diminui cerca de 6% da base, baseado na idade de 18-60 anos.
+
+- Está na pasta "Dataset" o DataFrame completo e também o com o tratamento de dados.
+
+- Além do tratamento que está em "TratamentoDados", fizemos avaliações estatísticas com o nosso DataFrame, onde buscavámos índices interessantes e insights para o clique ou não clique em uma propaganda, essa parte está em "projetoml_estat".
+
+- Utilizamos também séries temporais e partimos para nosso modelo de Machine Learning. Você pode encontrar as análises dos Hiperparâmetros, Modelos e Matriz de Confusão na pasta "Modelo de Machine Learning".
+
+- O melhor modelo a ser utilizado foi "Regressão Logística".
+
 
 
 ## Documentação
 
-[Documentação Utilizada](https://link-da-documentação)
+[Seaborn](https://seaborn.pydata.org/)
 
-
-## Funcionalidades
-
-- Intro do DF
-- Tratamento de dados
-- Para que usamos estatística
-- Modelos e como funcionam
+[Matplotlib](https://matplotlib.org/stable/users/index.html)
 
 
 ## FAQ
 
 #### Como uso o data frame?
 
-Resposta 1
+- Primeiro passo é utilizar o arquivo na pasta "Dataset". Logo em seguida, seria interessante já abrir o CSV do arquivo com a função:
+
+```http
+ df = pd.read_csv('advertising_full.csv')
+```
+- Utilizamos pandas e importamos essas bibliotecas antes de visualizar o DF.
 
 #### Qual o principal modelo?
 
-Resposta 2
+- O principal modelo utilizado em nossas análises foi a Regressão Logística. Pode ser acessado com o comando:
+
+```http
+modelo = joblib.load(modelo_regressao_logistica.joblib)
+```
 
 
 ## Autores
 
-- [@nossogithub](https://www.github.com/octokatherine)
-
+- [@nataliagiardini](https://www.github.com/nataliagiardini)
+- [@rodrigueslucelia](https://www.github.com/rodrigueslucelia)
