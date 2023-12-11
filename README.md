@@ -27,7 +27,7 @@ Buscamos na apresentação final, definir quais os aspectos da discussão fariam
 
 **Bibliotecas:** NumPy, Pandas, SeaBorn, MatPlotLib
 
-**Modelos:** Regressão Logística, Árvore de Decisão e KNN.
+**Modelos:** Regressão Logística, Árvore de Decisão, KNN e SVM.
 
 
 
@@ -79,3 +79,4 @@ modelo = joblib.load(modelo_regressao_logistica.joblib)
 - [@nataliagiardini](https://www.github.com/nataliagiardini)
 - [@rodrigueslucelia](https://www.github.com/rodrigueslucelia)
 - [@pandolfiz](https://github.com/Pandolfiz)
+- [@coleone7](https://github.com/coleone7)
