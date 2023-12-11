@@ -78,3 +78,4 @@ modelo = joblib.load(modelo_regressao_logistica.joblib)
 
 - [@nataliagiardini](https://www.github.com/nataliagiardini)
 - [@rodrigueslucelia](https://www.github.com/rodrigueslucelia)
+- [@pandolfiz](https://github.com/Pandolfiz)
